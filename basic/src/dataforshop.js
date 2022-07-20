@@ -1,16 +1,16 @@
 const shopdata = [
     {
         id : 1,
-        title: "React Logo 2",
+        title: "Suitcase 1",
         price: 30,
-        picture : "logo192.png"
+        picture : "suitcasepic.jpg"
         // Don't think you do {} here, shop the very best deals!- money sign animation
     },
     {
         id: 2,
-        title: "React Logo 2",
+        title: "Suitcase 2",
         price: 40,
-        picture : "logo512.png"
+        picture : "suitcasepic.jpg"
       }
 ]
 export default shopdata;
