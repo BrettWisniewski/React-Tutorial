@@ -11,17 +11,27 @@ function ThingsTest(props){
   return(
     <div>
       <div className = "aligned">
-      <h3 className = "coloringname">
+      <h4 className = "coloringname">
       {props.name}
-      </h3>
-      </div>
-      <div className = "aligned">
+      </h4>
       <img className='pictures' src = {`/images/${props.pic}`} />
       </div>
     </div>
   )
 }
-
+function ShoppingList(props){
+  // Put beyond overarching parent div
+  // Putting each HTML Tag in Seperate Dics to see if they can align vertically via flexbox
+  // problem right now is that the props being passed in are not aligning with the flexbox of the previosuly passed props
+  return(
+    <div className = "container">
+      <h4 className = "inside">
+      {props.name}
+      </h4>
+      <img className='pictures' src = {`/images/${props.pic}`} />
+      </div>
+  )
+}
 function App() {
   // Test of New Branch for New Site
   return (
@@ -32,6 +42,10 @@ function App() {
       {shopdata.map((item)=>{
        return (
        <ThingsTest key = {item.id} name={item.title} cost={item.price} pic = {item.picture}/>
+     );})}
+     {shopdata.map((item)=>{
+       return (
+       <ShoppingList key = {item.id} name={item.title} cost={item.price} pic = {item.picture}/>
      );})}
     </div>
   );
