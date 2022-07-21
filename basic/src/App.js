@@ -1,4 +1,4 @@
-
+import './style.css'
 import './App.css';
 import shopdata from "./dataforshop.js"
 
@@ -7,10 +7,10 @@ import shopdata from "./dataforshop.js"
 function ThingsTest(props){
   return(
     <div>
-      <h3>
+      <h3 className = "coloringname">
       {props.name}
       </h3>
-      <img src = {`/images/${props.pic}`} />
+      <img className='pictures' src = {`/images/${props.pic}`} />
     </div>
   )
 }
@@ -19,9 +19,9 @@ function App() {
   // Test of New Branch for New Site
   return (
     <div className="App">
-      <p> Some text as a test to see if it works</p>
+      <p className = "whatever"> Some text as a test to see if it works</p>
       <p> Another test</p>
-      <p> WILL THE IMAGES SHOW UP PART 2?</p>
+      <p> WILL THE IMAGES SHOW UP PART 4?</p>
       {shopdata.map((item)=>{
        return (
        <ThingsTest key = {item.id} name={item.title} cost={item.price} pic = {item.picture}/>
