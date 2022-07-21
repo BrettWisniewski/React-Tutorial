@@ -6,12 +6,16 @@ import shopdata from "./dataforshop.js"
 
 function ThingsTest(props){
   // Put beyond overarching parent div
+  // Putting each HTML Tag in Seperate Dics to see if they can align vertically via flexbox
+  // problem right now is that the props being passed in are not aligning with the flexbox of the previosuly passed props
   return(
     <div>
       <div className = "aligned">
       <h3 className = "coloringname">
       {props.name}
       </h3>
+      </div>
+      <div className = "aligned">
       <img className='pictures' src = {`/images/${props.pic}`} />
       </div>
     </div>
