@@ -5,12 +5,15 @@ import shopdata from "./dataforshop.js"
 // price might have trouble showing up since it is not a string, test this
 
 function ThingsTest(props){
+  // Put beyond overarching parent div
   return(
     <div>
+      <div className = "aligned">
       <h3 className = "coloringname">
       {props.name}
       </h3>
       <img className='pictures' src = {`/images/${props.pic}`} />
+      </div>
     </div>
   )
 }
