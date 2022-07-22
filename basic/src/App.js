@@ -4,6 +4,8 @@ import shopdata from "./dataforshop.js"
 
 // price might have trouble showing up since it is not a string, test this
 
+// Don't fully undesrtand how to place incoming props at the same horizontal style level as previous props
+
 function ThingsTest(props){
   // Put beyond overarching parent div
   // Putting each HTML Tag in Seperate Dics to see if they can align vertically via flexbox
@@ -19,6 +21,7 @@ function ThingsTest(props){
     </div>
   )
 }
+// KEEP IN MIND THAT IMAGE TAG MIGHT NOT BE SELECTED BECAUSE IT IS A DIFFERENT CLASS THAN THE HEADER 4 TAG
 function ShoppingList(props){
   // Put beyond overarching parent div
   // Putting each HTML Tag in Seperate Dics to see if they can align vertically via flexbox
@@ -29,6 +32,16 @@ function ShoppingList(props){
       {props.name}
       </h4>
       <img className='pictures' src = {`/images/${props.pic}`} />
+      </div>
+  )
+}
+function GridTesting(props){
+  return(
+    <div className = "grid-container">
+      <h4 className = "grid-item">
+      {props.name}
+      </h4>
+      <img className='grid-item' id= "coord" src = {`/images/${props.pic}`} />
       </div>
   )
 }
@@ -46,6 +59,10 @@ function App() {
      {shopdata.map((item)=>{
        return (
        <ShoppingList key = {item.id} name={item.title} cost={item.price} pic = {item.picture}/>
+     );})}
+     {shopdata.map((item)=>{
+       return (
+       <GridTesting key = {item.id} name={item.title} cost={item.price} pic = {item.picture}/>
      );})}
     </div>
   );
