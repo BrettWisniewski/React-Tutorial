@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .pictures{
     max-width: 100%;
     width: 12%;
@@ -17,7 +21,7 @@
     display: flex;
     /*flex-wrap: nowrap;*/
     /* flex-direction: column; This makes it so that the flex will start on the furthest left side*/
-    /* 2:49 to see video with CSS in REACT What this does is makes it so that the cart list items are aligned in the way we want them to be vertically */
+    /* COLUMN 2:49 to see video with CSS in REACT What this does is makes it so that the cart list items are aligned in the way we want them to be vertically */
     flex-direction: column;
     align-items: left;
     justify-content: flex-start;
@@ -48,4 +52,32 @@
   /*margin: 25500x;*/
   align-items: center;
   align-self: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: gray;
+    padding: 5px;
+}
+  
+/* Designing all grid-items */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+#coord{
+    width: 10%;
+    height: 10%;
+    /*width: 12%; */
+}
+.flexabove{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flexbelowname{
+    color: orange;
 }

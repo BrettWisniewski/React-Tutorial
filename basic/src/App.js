@@ -31,9 +31,12 @@ function ShoppingList(props){
       <h4 className = "inside">
       {props.name}
       </h4>
-      <img className='pictures' src = {`/images/${props.pic}`} />
+      <div>
+      {props.img && <img className='pictures' src = {`/images/${props.pic}`}/> }
       </div>
-  )
+      </div>
+  )// Make it return to normal like previous functions if you want the images to show up they want show up this way for some reason
+  // images show up on the right side of the screen without the conditional rendering part
 }
 function GridTesting(props){
   return(
@@ -45,6 +48,24 @@ function GridTesting(props){
       </div>
   )
 }
+// Number for price is a string not an integer remember to change that
+function ShoppingItems(props){
+  return(
+    <div>
+      <div className = "flexabove">
+      <h4 className = "flexbelowname">
+      {props.name}
+      </h4>
+      <h1 className = "flexbelowname">
+      {props.cost}
+      </h1>
+      <img className='pictures' src = {`/images/${props.pic}`} />
+      <btn> Press</btn>
+      </div>
+    </div>
+  )
+}
+// Add a function with flex-row that has name price add to cart and picture
 function App() {
   // Test of New Branch for New Site
   return (
@@ -63,6 +84,10 @@ function App() {
      {shopdata.map((item)=>{
        return (
        <GridTesting key = {item.id} name={item.title} cost={item.price} pic = {item.picture}/>
+     );})}
+     {shopdata.map((item)=>{
+       return (
+       <ShoppingItems key = {item.id} name={item.title} cost={item.price} pic = {item.picture}/>
      );})}
     </div>
   );
