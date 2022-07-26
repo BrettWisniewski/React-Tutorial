@@ -79,6 +79,12 @@ function App() {
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
       <p> Another test</p>
+      <div className = "card">
+        <div className = "corner">
+        <div> Hey</div>
+        <div> HEY AGAIN</div>
+        </div>
+      </div>
       <p> WILL THE IMAGES SHOW UP PART 4?</p>
       {shopdata.map((item)=>{
        return (
