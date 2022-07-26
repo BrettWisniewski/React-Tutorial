@@ -1,6 +1,7 @@
 import './style.css'
 import './App.css';
 import shopdata from "./dataforshop.js"
+import React, {useState} from "react"
 
 // price might have trouble showing up since it is not a string, test this
 
@@ -50,6 +51,10 @@ function GridTesting(props){
 }
 // Number for price is a string not an integer remember to change that
 function ShoppingItems(props){
+  const [count, setCount]= React.useState(0)
+  function add (){
+    setCount(count + props.price)
+  }
   return(
     <div>
       <div className = "flexabove">
@@ -60,13 +65,15 @@ function ShoppingItems(props){
       {props.cost}
       </h1>
       <img className='pictures' src = {`/images/${props.pic}`} />
-      <btn> Press</btn>
+      <btn onClick = {add}> Press</btn>
+      <h1> {count}</h1>
       </div>
     </div>
   )
 }
 // Add a function with flex-row that has name price add to cart and picture
 function App() {
+  //const [cartcount, setCartCount]= React.useState(0)
   // Test of New Branch for New Site
   return (
     <div className="App">
