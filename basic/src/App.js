@@ -85,6 +85,10 @@ function App() {
         <div> he</div>
         <img className = "picard" src = {"/images/suitcasepic.jpg"}/>
         </div>
+        <div className = "cardcenter">
+        <div> Text Here</div>
+        <div> Again Text Here</div>
+        </div>
       </div>
       <p> WILL THE IMAGES SHOW UP PART 4?</p>
       {shopdata.map((item)=>{

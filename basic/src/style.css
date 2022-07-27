@@ -96,3 +96,12 @@ body{
 .picard{
     width: 12%;
 }
+
+.cardcenter{
+    /* Must have two items for flexbox other wise it does not work*/
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color:blue;
+    padding: 50px;
+}
