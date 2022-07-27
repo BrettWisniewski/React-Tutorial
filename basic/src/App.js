@@ -81,8 +81,9 @@ function App() {
       <p> Another test</p>
       <div className = "card">
         <div className = "corner">
-        <div> Hey</div>
-        <div> HEY AGAIN</div>
+        <div> 5 </div>
+        <div> he</div>
+        <img className = "picard" src = {"/images/suitcasepic.jpg"}/>
         </div>
       </div>
       <p> WILL THE IMAGES SHOW UP PART 4?</p>

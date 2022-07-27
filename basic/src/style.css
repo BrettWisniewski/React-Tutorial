@@ -81,3 +81,18 @@ body{
 .flexbelowname{
     color: orange;
 }
+.card{
+    background-color: white;
+    width: 13%;
+    height: 250px;
+}
+
+.corner {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.picard{
+    width: 12%;
+}
