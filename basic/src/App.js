@@ -2,7 +2,7 @@ import './style.css'
 import './App.css';
 import shopdata from "./dataforshop.js"
 import React, {useState} from "react"
-
+import {useEffect} from "react"
 // price might have trouble showing up since it is not a string, test this
 
 // Don't fully undesrtand how to place incoming props at the same horizontal style level as previous props
@@ -72,7 +72,10 @@ function ShoppingItems(props){
   )
 }
 // Add a function with flex-row that has name price add to cart and picture
-function App() {
+function App() { useEffect(() => {
+  //Runs only on the first render
+  alert("HELLO!")
+  }, []);
   //const [cartcount, setCartCount]= React.useState(0)
   // Test of New Branch for New Site
   return (
