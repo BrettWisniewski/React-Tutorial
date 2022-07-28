@@ -72,9 +72,12 @@ function ShoppingItems(props){
   )
 }
 // Add a function with flex-row that has name price add to cart and picture
-function App() { useEffect(() => {
+function App() { useEffect(function thing2() {
   //Runs only on the first render
-  alert("HELLO!")
+  alert("Hello")
+  //const message = "Exists"
+  //return <div className='initial'>{message}</div>
+  
   }, []);
   //const [cartcount, setCartCount]= React.useState(0)
   // Test of New Branch for New Site
