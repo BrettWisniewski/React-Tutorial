@@ -17,6 +17,7 @@ function ThingsTest(props){
       <h4 className = "coloringname">
       {props.name}
       </h4>
+      <div>look at tailwind</div>
       <img className='pictures' src = {`/images/${props.pic}`} />
       </div>
     </div>
@@ -38,6 +39,8 @@ function ShoppingList(props){
       </div>
   )// Make it return to normal like previous functions if you want the images to show up they want show up this way for some reason
   // images show up on the right side of the screen without the conditional rendering part
+
+  // Essentially playing around with Tailwind to see what works with color changes
 }
 function GridTesting(props){
   return(
@@ -71,7 +74,10 @@ function ShoppingItems(props){
     </div>
   )
 }
+// Changing whatever I can to add a committ
 // Add a function with flex-row that has name price add to cart and picture
+
+// Addong another change to see if I can add a committ
 function App() { useEffect(function thing2() {
   //Runs only on the first render
   alert("Hello")
@@ -85,6 +91,7 @@ function App() { useEffect(function thing2() {
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
       <p> Another test</p>
+      <p> Third Test</p>
       <div className = "card">
         <div className = "corner">
         <div> 5 </div>
