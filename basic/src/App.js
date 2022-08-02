@@ -91,7 +91,7 @@ function App() { useEffect(function thing2() {
   return (
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
-      <p> Another test</p>
+      <p> Another test 2 added this</p>
       <p> Third Test</p>
       <div className = "card">
         <div className = "corner">
