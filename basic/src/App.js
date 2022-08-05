@@ -90,6 +90,7 @@ function App() { useEffect(function thing2() {
   // adding one more comment to explain something
   // Adding the Final Committ
   // Adding another committ
+  // third final committ
   return (
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
