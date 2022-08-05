@@ -89,6 +89,7 @@ function App() { useEffect(function thing2() {
   // Test of New Branch for New Site
   // adding one more comment to explain something
   // Adding the Final Committ
+  // Adding another committ
   return (
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
