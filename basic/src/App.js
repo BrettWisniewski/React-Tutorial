@@ -95,7 +95,7 @@ function App() { useEffect(function thing2() {
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
       <p> Another test 2 added this</p>
-      <p> Third Test</p>
+      <p> Third Test with another commit</p>
       <div className = "card">
         <div className = "corner">
         <div> 5 </div>
