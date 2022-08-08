@@ -91,6 +91,7 @@ function App() { useEffect(function thing2() {
   // Adding the Final Committ
   // Adding another committ
   // third final committ
+  // another commit
   return (
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
