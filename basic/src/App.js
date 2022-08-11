@@ -98,6 +98,7 @@ function App() { useEffect(function thing2() {
   // night commit #2
 
   // final commit #3
+  // final commit #4
   return (
     <div className="App">
       <p className = "whatever"> Some text as a test to see if it works</p>
